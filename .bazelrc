@@ -1,0 +1,6 @@
+build --config=clang
+build --disk_cache=.cache
+build --features=swift.index_while_building
+
+try-import %workspace%/clang.bazelrc
+try-import %workspace%/.bazelrc.local
